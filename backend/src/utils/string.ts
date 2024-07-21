@@ -1,5 +1,5 @@
 export function getPhonemes(value: string) {
-  const strippedValue = value.replace(' ' , '');
+  const strippedValue = value.replace(/\s/g , '');
   const consonants = strippedValue
     .split('')
     .filter(e => e.match(/[^aeiou]/) != null)
