@@ -1,0 +1,19 @@
+<main class="main">
+  <div class="content">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <in-field-input [control]="firstName" label="First name" />
+
+      <in-field-input [control]="lastName" label="Last name" />
+
+      <in-field-textarea [control]="skills" label="Social skills" />
+
+      <in-socials [form]="form" group="socials" (addSocial)="addSocial()" (removeSocial)="removeSocial($event)" />
+
+      <in-button text="Submit form" type="submit" />
+    </form>
+
+    <in-output [content]="response" />
+  </div>
+</main>
+
+<router-outlet />

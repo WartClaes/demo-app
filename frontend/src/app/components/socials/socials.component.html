@@ -1,0 +1,29 @@
+<div [formGroup]="form" class="socials">
+  <div formArrayName="socials">
+    <div *ngFor="let social of socials.controls; let i=index" class="field" [formGroupName]="i">
+      <div class="input-wrapper">
+        <label for="socialType-{{ i }}">Social type</label>
+        <select id="socialType-{{ i }}" formControlName="type">
+          <option value="facebook">Facebook</option>
+          <option value="x">X</option>
+          <option value="instagram">Instagram</option>
+          <option value="linkedin">LinkedIn</option>
+        </select>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="socialUrl-{{ i }}">Social url</label>
+        <input id="socialUrl-{{ i }}" type="text" formControlName="url" />
+      </div>
+
+      <in-button *ngIf="i > 0" (click)="onClickRemove(i, $event)" text="remove" size="small" color="link" />
+    </div>
+
+    <in-button
+      (click)="onClickAdd($event)"
+      text="add social"
+      size="small"
+      color="secondary"
+    />
+  </div>
+</div>

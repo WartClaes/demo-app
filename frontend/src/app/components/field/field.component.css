@@ -1,0 +1,17 @@
+.field {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.alert {
+  color: #f00;
+  font-size: 12px;
+  margin-top: 4px;
+}

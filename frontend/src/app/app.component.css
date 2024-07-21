@@ -1,0 +1,13 @@
+.main {
+  color: var(--color-text);
+  height: 100%;
+}
+
+.content {
+  box-sizing: border-box;
+  display: grid;
+  height: 100%;
+  gap: 24px;
+  grid: auto-flow / 300px 1fr;
+  padding: 24px;
+}
