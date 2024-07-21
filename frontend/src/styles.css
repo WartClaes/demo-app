@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+  --border-radius: 4px;
+
   --color-white: #fff;
+  --color-lightgrey: #f4f4f4;
+  --color-grey: #eee;
 
   --color-primary: #4A249D;
   --color-primary-dark: #381585;
@@ -10,6 +14,15 @@
   --color-secondary: #009FBD;
 
   --color-text: #444;
+  --color-alert: #f00;
+
+  --font-size-small: 12px;
+  --font-size-default: 14px;
+
+  --spacing4: 4px;
+  --spacing8: 8px;
+  --spacing12: 12px;
+  --spacing24: 24px;
 }
 
 html,
@@ -23,7 +36,8 @@ body {
 input,
 select,
 textarea {
+  background-color: var(--color-white);
   border: 1px solid var(--color-primary);
-  border-radius: 4px;
-  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  padding: var(--spacing8) var(--spacing12);
 }

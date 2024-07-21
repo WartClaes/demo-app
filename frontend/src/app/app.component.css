@@ -7,7 +7,7 @@
   box-sizing: border-box;
   display: grid;
   height: 100%;
-  gap: 24px;
+  gap: var(--spacing24);
   grid: auto-flow / 300px 1fr;
-  padding: 24px;
+  padding: var(--spacing24);
 }

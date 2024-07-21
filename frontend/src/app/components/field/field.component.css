@@ -1,17 +1,17 @@
 .field {
-  margin-bottom: 12px;
+  margin-bottom: var(--spacing12);
   width: 100%;
 }
 
 .input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--spacing4);
   width: 100%;
 }
 
 .alert {
-  color: #f00;
-  font-size: 12px;
-  margin-top: 4px;
+  color: var(--color-alert);
+  font-size: var(--font-size-small);
+  margin-top: var(--spacing4);
 }
