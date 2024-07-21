@@ -31,7 +31,8 @@ app.post('/api', (req: Request, res: Response) => {
 
   const hash = crypto.createHash('sha256');
   hash.update(JSON.stringify(responseData));
-  const fileName = `${hash.digest('hex')}.txt`;
+  const timestamp = Date.now();
+  const fileName = `${hash.digest('hex')}-${timestamp}.txt`;
 
   try {
     fs.writeFileSync(fileName, JSON.stringify(responseData), 'utf8');
