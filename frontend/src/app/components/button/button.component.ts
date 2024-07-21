@@ -11,8 +11,4 @@ export class InButton {
   @Input() size: 'default' | 'small' = 'default';
   @Input() color: 'primary' | 'secondary' | 'link' = 'primary';
   @Input() type: HTMLButtonElement['type'] = 'button';
-
-  constructor() {
-    console.log(this.color);
-  }
 }
