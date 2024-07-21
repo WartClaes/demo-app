@@ -22,3 +22,12 @@ $ cd frontend
 $ npm install
 $ npm start
 ```
+
+## Testing
+
+The backend repository includes tests for the utility functions
+
+```
+$ cd backend
+$ npm run test
+```
